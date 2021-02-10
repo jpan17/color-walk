@@ -170,13 +170,13 @@ function createScene(){
 
   // 8. ColorStops
   for (var i = 0; i < NUM_STOPS; i++) {
-    console.log(colorstops[i])
+    // console.log(colorstops[i])
     var currentStop = colorStops[i];
 
     // determine coordinates on map
     var X = (currentStop.lat - START_LAT) * 23000 - 90;
     var Y = (currentStop.lon - START_LON) * 23000 + 20;
-    console.log(X + ", " + Y);
+    // console.log(X + ", " + Y);
     var src = currentStop.src;
 
     var tempStop = new ColorStop(scene, X, Y, src);
