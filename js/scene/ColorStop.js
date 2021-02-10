@@ -3,7 +3,7 @@ function ColorStop (scene, x, y, src) {
     var numStars = 10;
     var radius = 5;
     var rotationSpeed = 0.05;
-    var color = 0xffffff;
+    var color = 0x30ff4f;
 
     var object = new THREE.Object3D();
     this.object = object;

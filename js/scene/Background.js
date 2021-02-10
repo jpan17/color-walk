@@ -13,7 +13,7 @@ function Background(scene) {
   }
    
   var mat = new THREE.MeshStandardMaterial({
-    color: 0xffffff,
+    color: 0x179130,
     side: THREE.DoubleSide,
     flatShading: true,
     roughness: 1.0,
@@ -30,7 +30,7 @@ function Background(scene) {
   var sky = new THREE.Mesh(
     new THREE.SphereGeometry(180, 20, 20),
     new THREE.MeshStandardMaterial( {
-      color: 0x92c4f0,
+      color: 0x007004,
       side: THREE.BackSide,
     } )
   )
