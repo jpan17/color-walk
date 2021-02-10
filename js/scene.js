@@ -122,7 +122,9 @@ function createScene(){
 
   // setup player movement
   controls = new THREE.PlayerControls(camera, dom);
-  controls.getObject().position.set(0, 0, 0);
+  // overhead
+  // controls.getObject().position.set(-80, 90, 60);
+  controls.getObject().position.set(-90, 0, 20);
   scene.add(controls.getObject());
 
   // 4. lights
@@ -172,8 +174,8 @@ function createScene(){
     var currentStop = colorStops[i];
 
     // determine coordinates on map
-    var X = (currentStop.lat - START_LAT) * 25000 - 90;
-    var Y = (currentStop.lon - START_LON) * 25000 + 90;
+    var X = (currentStop.lat - START_LAT) * 23000 - 90;
+    var Y = (currentStop.lon - START_LON) * 23000 + 20;
     console.log(X + ", " + Y);
     var src = currentStop.src;
 
@@ -201,7 +203,7 @@ function getColorStop() {
       var img = document.getElementById("img");
       img.src = stopList[i].src;
       
-      setTimeout(fade_out, 3000);
+      setTimeout(fade_out, 2000);
 
     }
   }
