@@ -1,6 +1,7 @@
 function ColorStop (scene, x, y, src) {
 
     var numStars = 10;
+    this.time = Math.random() * 0.5 - 1;
     var radius = 5;
     var rotationSpeed = 0.05;
     var color = 0x30ff4f;
@@ -44,9 +45,9 @@ function ColorStop (scene, x, y, src) {
 
     scene.add(object);
 
-  this.update = function() {
-      this.sphere.rotation.y += rotationSpeed;
-      this.sphereGrid.rotation.y += rotationSpeed;
+  this.update = function(delta) {
+      this.time += delta;
+      this.object.position.y = Math.sin(this.time * Math.PI) * 0.5 + 7;
   }
 
 }

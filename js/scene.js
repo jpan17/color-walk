@@ -8,6 +8,7 @@ var scene;
 var renderer;
 var dom;
 var clock;
+var chicken;
 
 // objects related to scene objects
 var light;
@@ -214,7 +215,7 @@ function animate() {
 
     // color stops
     for (var i = 0; i < NUM_STOPS; i++) {
-      stopList[i].update();
+      stopList[i].update(delta);
     }
 
     getColorStop();
