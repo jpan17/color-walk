@@ -1,5 +1,9 @@
-function Constellation (scene, x, y, color, numStars, rotationSpeed,
-    radius) {
+function ColorStop (scene, x, y, src) {
+
+    var numStars = 10;
+    var radius = 5;
+    var rotationSpeed = 0.05;
+    var color = 0xffffff;
 
     var object = new THREE.Object3D();
     this.object = object;
@@ -31,6 +35,7 @@ function Constellation (scene, x, y, color, numStars, rotationSpeed,
 
     this.sphere = sphere;
     this.sphereGrid = sphereGrid;
+    this.src = src;
     collidableObjects.push(this.sphere)
 
     object.position.x = x;

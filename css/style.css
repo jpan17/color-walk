@@ -84,3 +84,15 @@ body {
   	padding-top:2%;
   	vertical-align:center;
 }
+
+#img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	width: 50%;
+	max-width: 300px;
+	max-height: 500px;
+	z-index: 1000;
+}
+
